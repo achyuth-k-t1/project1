@@ -1,0 +1,62 @@
+body{
+  background-color: aqua;
+  
+}
+h1{
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 5em;
+}
+.div{
+  display: flex;
+  justify-content: center; 
+
+  flex-direction: column;
+}
+
+.major{
+  background-color: darkkhaki;
+}
+.set1, .set2,.set3,.result{
+  display: flex;
+  justify-content: center;
+}
+
+.x{
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: pink;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-size: 6rem;
+  
+}
+.a,.d,.g,.b,.e,.h{
+   border-right: 2px solid black;
+}
+.a,.d,.b,.e,.c,.f{
+  border-bottom: 2px solid black; 
+}
+.result{
+  font-size: 2rem;
+}
+.y{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+button{
+  font-size: 1rem;
+   margin-top: 2rem;
+   width: 5rem;
+   height: 3rem;
+   align-items: center;
+   background-color: black;
+   color: white;
+   border: none;
+   border-radius: 3px;
+
+
+}
+
