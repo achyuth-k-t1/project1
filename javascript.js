@@ -1,5 +1,6 @@
+
 let array=[undefined, undefined, undefined,undefined, undefined, undefined,undefined, undefined, undefined]
-let value='X'
+let value='&#215;'
 let cnt=0;
 let input=document.querySelectorAll('.x')
 input.forEach(function(element){
@@ -11,8 +12,8 @@ input.forEach(function(element){
       if(array[ID-1]===undefined){
         array[ID-1]=value
         element.innerHTML=value
-        if(value==='X')value='O'
-        else value='X'
+        if(value==='&#215;')value='&#x25CB;'
+        else value='&#215;'
         let val;
         if(value=='X')val="Cross"
         else val="Circle"
@@ -24,6 +25,7 @@ input.forEach(function(element){
     
   })
 })
+
 function checkWin(a){
   if(cnt===9){
     document.querySelector('.result').innerHTML=`Drawww &#128555;`
@@ -31,6 +33,7 @@ function checkWin(a){
   }
   if ((a[0] === a[1] && a[1] === a[2]) && a[0] !== undefined) {
     document.querySelector('.result').innerHTML=`${a[0]} Won &#x1F973;`
+    makeConfetti()
     restart()
   }
   else if ((a[3] === a[4] && a[4] === a[5]) && a[3] !== undefined) {
@@ -69,7 +72,8 @@ function checkWin(a){
 const div=document.createElement('div')
 function restart(){
   div.className='y'
-  div.innerHTML=`<button id="butt">Restart</button>`
+  div.innerHTML=`<button id="butt">Restart</button>
+  `
   document.querySelector('div').appendChild(div)
   const elements = document.querySelectorAll('.x');
 
@@ -86,3 +90,5 @@ function restart(){
     location.reload()
   })
 }
+
+
