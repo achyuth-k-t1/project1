@@ -1,6 +1,13 @@
-
 let array=[undefined, undefined, undefined,undefined, undefined, undefined,undefined, undefined, undefined]
-let value='&#215;'
+let random=parseInt(Math.random()*2)
+let value;
+if(random==0){value='&#215;'
+document.querySelector('.result').innerHTML=`${value} Cross`
+}
+else {value='&#x25CB;'
+document.querySelector('.result').innerHTML=`${value} Circle`
+}
+
 let cnt=0;
 let input=document.querySelectorAll('.x')
 input.forEach(function(element){
@@ -14,8 +21,8 @@ input.forEach(function(element){
         element.innerHTML=value
         if(value==='&#215;')value='&#x25CB;'
         else value='&#215;'
-        let val;
-        if(value=='X')val="Cross"
+        var val;
+        if(value=='&#215;')val="Cross"
         else val="Circle"
         document.querySelector('.result').innerHTML=`${value} ${val}`
         

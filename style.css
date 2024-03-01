@@ -38,6 +38,7 @@ h1{
 }
 .result{
   font-size: 2rem;
+  margin-top: 1em;
 }
 .y{
   display: flex;
